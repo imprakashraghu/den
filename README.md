@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://shields.io/) 
 [![GitHub license](https://img.shields.io/github/license/prakashjaw/StrapDown.js.svg)](https://github.com/prakashjaw/den/blob/master/LICENSE)
 [![Release Version](https://img.shields.io/badge/release-v1.0.0-green.svg)](https://github.com/prakashjaw/den) 
-[![den Website](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)]
+[![den Website](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)
 [![Author](https://img.shields.io/badge/author-prakashjaw-blue.svg)](https://prakashjaw.bss.design) 
 
 🎉 Open Source Cli Tool for Windows
