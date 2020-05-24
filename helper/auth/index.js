@@ -7,7 +7,7 @@ const crypto = require('crypto');
 // user defined module
 const h = require('../secure');
 // path to den authentication storage
-const basePath = `C:\\Users\\${os.userInfo().username}\\.den\\storage\\auth`;
+const basePath = `'your_auth_path'`;
 
 /**
  * compares the user given password with the master password

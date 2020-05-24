@@ -4,7 +4,7 @@
 const chalk = require('chalk');
 const inquirer = require('inquirer');
 const figlet = require('figlet');
-const clipboardy = require('clipboardy');
+const clipboardy = require("copy-paste");
 // user defined modules
 const storage = require('../helper/storage');
 const auth = require('../helper/auth');
@@ -187,8 +187,9 @@ let showAllData = () => {
                         console.log(`\nAccount Type: ${response.data[j].accountType}`);
                         console.log(`\nPassword: ${response.data[j].password}`);
                         console.log(`\nCreated: ${new Date(response.data[j].time)}`);
-                        clipboardy.writeSync(response.data[j].password);
-                        console.log(chalk.yellow('\nPassword copied to clipboard!'));                 
+                        clipboardy.copy(response.data[j].password, function() {
+                            console.log(chalk.yellow('\nPassword copied to clipboard!'));                 
+                        });                        
                     }
                 }
             });
@@ -228,8 +229,9 @@ let showAllDataByAccountType = () => {
                         console.log(`\nProperty: ${response.data[j].prop}`);
                         console.log(`\nPassword: ${response.data[j].password}`);
                         console.log(`\nCreated: ${new Date(response.data[j].time)}`);
-                        clipboardy.writeSync(response.data[j].password);
-                        console.log(chalk.yellow('\nPassword copied to clipboard!'));                 
+                        clipboardy.copy(response.data[j].password, function() {
+                            console.log(chalk.yellow('\nPassword copied to clipboard!'));                 
+                        });                        
                     }
                 }
             });

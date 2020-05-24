@@ -7,8 +7,8 @@ const os = require('os');
 // user defined module
 const h = require('../secure');
 // global path variables for den storage
-const userDataPath = path.join(os.homedir(), '\\.den\\storage\\auth');
-const dataPath = path.join(os.homedir(),'\\.den\\storage\\data');
+const userDataPath = path.join('your_data_path');
+const dataPath = path.join('your_data_path');
 
 /**
  * initialization of den storage
