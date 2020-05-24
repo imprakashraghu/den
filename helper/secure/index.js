@@ -3,8 +3,8 @@
 //core module
 const crypto = require('crypto')
 // globla variables for securing the file data
-var algorithm = 'aes256';
-var key = 'denappcliisapplicationdevelopedbyjaw';
+var algorithm = 'your_algorithm';
+var key = 'your_secret_key';
 
 /**
  * encrypting the given text
