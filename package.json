@@ -1,0 +1,27 @@
+{
+  "name": "dencli",
+  "version": "1.0.0",
+  "preferGlobal": true,
+  "description": "Password Manager CLI Tool",
+  "main": "index.js",
+  "bin": {
+    "den": "index.js"
+  },
+  "pkg": {
+	"targets":[
+		"node8"
+	]
+   },
+  "scripts": {
+    "start": "node index.js"    
+  },
+  "author": "hemaprakash raghu",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "clipboardy": "^2.3.0",
+    "commander": "^5.1.0",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0"
+  }
+}
