@@ -23,8 +23,8 @@ let init = (ans) => {
             reject("something went wrong!");
         }
         
-        let denDir = path.join(os.homedir(),'\\.den');
-        let storageDir = path.join(os.homedir(),'\\.den\\storage');        
+        let denDir = path.join('your_basepath');
+        let storageDir = path.join('your_storage_path');        
     
         if(!fs.existsSync(denDir)) {
             fs.mkdirSync(denDir);  
