@@ -9,10 +9,10 @@ const path = require('path');
 const auth = require('./auth');
 const h = require('./secure');
 // global path variables
-const homePath = path.join(os.homedir(), '\\.den');
-const basePath = path.join(os.homedir(), '\\.den\\storage\\data');
-const authPath = path.join(os.homedir(), '\\.den\\storage\\auth');
-const storagePath = path.join(os.homedir(), '\\.den\\storage');
+const homePath = path.join('home_path');
+const basePath = path.join('base_path');
+const authPath = path.join('authentication_path');
+const storagePath = path.join('storage_path');
 
 /**
  * storing password data
