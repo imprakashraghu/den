@@ -1,5 +1,5 @@
 
-🎉 Open Source Cli Tool for Windows
+🎉 Open Source Cli Tool for Windows | Linux | Mac OS
 
 den is a interactive cli tool to store, manage password data without any third party services.
 
