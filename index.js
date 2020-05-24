@@ -87,7 +87,7 @@ program
     .alias("i")
     .description("Initiation of den storage boxes")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\auth');
+        let temp_check_dir = 'your_auth_path';
         if(fs.existsSync(temp_check_dir)) {
             console.log(chalk.yellow("Den is already initialized"));
         } else {
@@ -115,7 +115,7 @@ program
     .alias("m")
     .description("Access as a master")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\auth');
+        let temp_check_dir = 'your_auth_path';
         if(fs.existsSync(temp_check_dir)) {
             helper.checkDenStorageStatus().then(status => {
                 if(status === "success") {
@@ -201,7 +201,7 @@ program
     .alias("s")
     .description("Store a password")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\data');
+        let temp_check_dir = 'your_data_path';
         if(fs.existsSync(temp_check_dir)) {
             helper.checkDenStorageStatus().then(status => {
                 if(status === "success") {
@@ -237,7 +237,7 @@ program
     .alias("d")
     .description("Erase the entire den storage")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\auth');
+        let temp_check_dir = 'your_auth_path';
         if(fs.existsSync(temp_check_dir)) {
             inquirer.prompt(questions.accessAsMaster).then(answer => {
                 commands.masterAccess(answer.mpassword).then(res => {
@@ -269,7 +269,7 @@ program
     .alias("o")
     .description("Show all the passwords in the storage")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\data');
+        let temp_check_dir = 'your_data_path';
         if(fs.existsSync(temp_check_dir)) {
             inquirer.prompt(questions.accessAsMaster).then(answer => {
                 commands.masterAccess(answer.mpassword).then(res => {
@@ -298,7 +298,7 @@ program
     .command("show <type>")
     .description("Show all the passwords in the storage by account type")
     .action((type) => {        
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\data');
+        let temp_check_dir = 'your_data_path';
         if(fs.existsSync(temp_check_dir)) {
             inquirer.prompt(questions.accessAsMaster).then(answer => {
                 commands.masterAccess(answer.mpassword).then(res => {
@@ -332,7 +332,7 @@ program
     .alias("d")
     .description("Deleting a specific password data from the storage")
     .action(() => {
-        let temp_check_dir = path.join(os.homedir(), '\\.den\\storage\\data');
+        let temp_check_dir = 'your_data_path';
         if(fs.existsSync(temp_check_dir)) {
             inquirer.prompt(questions.accessAsMaster).then(answer => {
                 commands.masterAccess(answer.mpassword).then(res => {
