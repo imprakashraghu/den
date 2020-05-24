@@ -14,7 +14,7 @@ den is a interactive cli tool to store, manage password data without any third p
 [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/prakashjaw/den) 
 [![GitHub license](https://img.shields.io/github/license/prakashjaw/den)](https://github.com/prakashjaw/den/blob/master/LICENSE)
 [![Release Version](https://img.shields.io/badge/release-v1.0.0-green.svg)](https://github.com/prakashjaw/den) 
-[![den Website](https://img.shields.io/website-up-down-green-red/http/cv.lbesson.qc.to.svg)]()
+[![den Website](https://img.shields.io/website.svg?down_color=green&down_message=up&up_color=green&up_message=up&url=http%3A%2F%2Fcv.lbesson.qc.to)](https://denapp.now.sh)
 [![Author](https://img.shields.io/badge/author-prakashjaw-blue.svg)](https://prakashjaw.bss.design) 
 
 &nbsp;
