@@ -23,6 +23,8 @@ den is a interactive cli tool to store, manage password data without any third p
 
 Den requires [Node.js](https://nodejs.org/) and npm (Node Package Manager).
 
+Before running this set the storage path in the source code
+
 ```cmd
 npm install -g ./
 ```
